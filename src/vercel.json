@@ -1,11 +1,20 @@
 { 
     "rewrites": [
-        { "source": "/", "destination": "https://chat.openai.com" },
-        {
-            "source": "/:match*",
-            "destination": "https://chat.openai.com/:match*"
-        }
+        { 
+			"source": "/", 
+			"destination": "/index.html" 
+		}
     ],
+	"routes": [
+		{
+		  "src": "/api/:match*",
+		  "dest": "https://api.openai.com/:match*"
+		},
+		{
+		  "src": "/chat/:match*",
+		  "dest": "https://chat.openai.com/:match*"
+		}
+	],
     "github": {
         "silent": true
     }
