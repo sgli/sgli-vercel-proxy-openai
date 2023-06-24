@@ -5,8 +5,8 @@
             "dest": "https://api.openai.com/:match*"
         },
         {
-            "source": "/chat/:match*",
-            "destination": "https://chat.openai.com/:match*"
+            "src": "/chat/:match*",
+            "dest": "https://chat.openai.com/:match*"
         }
     ],
     "github": {
