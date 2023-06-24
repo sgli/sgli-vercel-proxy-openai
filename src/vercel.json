@@ -1,12 +1,9 @@
 { 
-    "routes": [
+    "rewrites": [
+        { "source": "/", "destination": "https://chat.openai.com" },
         {
-            "src": "/api/:match*",
-            "dest": "https://api.openai.com/:match*"
-        },
-        {
-            "src": "/chat/:match*",
-            "dest": "https://chat.openai.com/:match*"
+            "source": "/:match*",
+            "destination": "https://chat.openai.com/:match*"
         }
     ],
     "github": {
