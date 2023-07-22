@@ -1,23 +1,11 @@
-{ 
+{
     "rewrites": [
         { 
-			"source": "/", 
-			"destination": "/index.html" 
-		},
-		{ 
-            "source": "/api", 
-            "destination": "https://api.openai.com" 
-        },
+		"source": "/", 
+		"destination": "https://chat.openai.com" 
+	},
         {
-            "source": "/api/:match*",
-            "destination": "https://api.openai.com/:match*"
-        },
-        { 
-            "source": "/chat", 
-            "destination": "https://chat.openai.com" 
-        },
-        {
-            "source": "/chat/:match*",
+            "source": "/:match*",
             "destination": "https://chat.openai.com/:match*"
         }
     ],
