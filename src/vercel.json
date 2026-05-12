@@ -1,13 +1,21 @@
 {
     "rewrites": [
         { 
-		"source": "/", 
-		"destination": "https://chat.openai.com" 
-	},
+			"source": "/chatgpt/", 
+			"destination": "https://chat.openai.com" 
+		},
         {
-            "source": "/:match*",
+            "source": "/chatgpt/:match*",
             "destination": "https://chat.openai.com/:match*"
-        }
+        },
+		{ 
+			"source": "/okx/", 
+			"destination": "https://www.okx.com" 
+		},
+		{ 
+			"source": "/okx/:match*", 
+			"destination": "https://www.okx.com/:match*" 
+		}
     ],
     "github": {
         "silent": true
